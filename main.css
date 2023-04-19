@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: url(./office.jpg) no-repeat;
+    background-size: 100%;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    margin-left: 100px;
+    color: black;
+}
+li{
+    display: inline !important;
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+    position: absolute;
+    transition: 0.5s;
+    width: 0;
+    text-align: center;
+    color: black;
+    z-index: 111;
+}
+a:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.568);
+    border-bottom: 1px solid white;
+    width: 100px;
+    margin-left: -5px;
+}
+.box1{
+    width: 50px;
+    height: 50px;
+    /* background-color: white; */
+    font-size: 0px;
+    position: absolute;
+    margin-left: 400px;
+    color: white;
+}
+
+.fa-xmark{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding-left: 5px;
+    color: black;
+}
+.fa-bars{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    z-index: 1;
+}
+@media screen and (max-width:500px){
+    h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri,;
+        font-size: 40px;
+    }
+    body{
+        background: url(./office_2.jpg) no-repeat;
+        background-size: 100%;
+        width: 500px;
+        overflow-x: hidden;
+    }
+    a{
+        display: none;
+        position: relative;
+        font-size: 25px;
+        margin-top: 50px;
+        width: 0px;
+        z-index: 11;
+        color: white;
+    }
+    
+    .a1{
+        margin-top: 600px;
+    }
+    .box1{
+        font-size: 30px;
+    }
+    .box2{
+        position: relative;
+        margin-top: 500px;
+        width: 500px;
+        height: 600px;
+        background-color: black;
+        position: absolute;
+        margin-top: 700px;
+        transition: 0.5s;
+        opacity: 0.8;
+        padding-left: 100px;
+    }
+}
+.box3{
+    opacity: 0;
+}
+.a2{
+    display: block;
+    position: relative;
+    font-size: 25px;
+    margin-top: 50px;
+    width: 0px;
+    z-index: 11;
+    color: white;
+}
